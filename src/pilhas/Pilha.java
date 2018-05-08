@@ -47,6 +47,14 @@ public class Pilha {
 
     }
 
+    public Object exibeUltimoValor() {
+        //top
+        if (this.pilhaVazia()) {
+            return null;
+        }
+        return this.pilha[this.posicaoPilha];
+    }
+
     public static void main(String args[]) {
         Pilha p = new Pilha();
         p.empilhar("Portuguesa ");
