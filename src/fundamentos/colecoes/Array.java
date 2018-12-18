@@ -13,16 +13,20 @@ public class Array {
         notasPedro[4] = 9.7;
 
         double totalJoao = 0;
-
-        for (int i = 0; i < notasJoao.length; i++){
-            totalJoao += notasJoao[i];
+        for(double nota: notasJoao){
+            totalJoao += nota;
         }
+//        for (int i = 0; i < notasJoao.length; i++){
+//            totalJoao += notasJoao[i];
+//        }
 
         double totalPedro = 0;
-
-        for (int i = 0; i < notasPedro.length; i++){
-            totalPedro += notasPedro[i];
+        for (double nota: notasPedro) {
+            totalPedro += nota;
         }
+//        for (int i = 0; i < notasPedro.length; i++){
+//            totalPedro += notasPedro[i];
+//        }
 
         System.out.println(totalJoao / notasJoao.length);
         System.out.println(totalPedro / notasPedro.length);
