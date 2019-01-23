@@ -12,16 +12,13 @@ public class NumeroPrimo {
         System.out.println("numero: ");
         numero = input.nextInt();
 
-
-        // numero = 8
-        // i = 2
         for (int i = 1; i <= numero; i++){
             if ( numero % i == 0 ){
                 contador ++;
             }
         }
 
-        if (contador==2){
+        if (contador == 2){
             System.out.println("eh numero primo");
         } else {
             System.out.println("Nao eh numero primo");
