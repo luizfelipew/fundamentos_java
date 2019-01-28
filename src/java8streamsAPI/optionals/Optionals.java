@@ -17,10 +17,15 @@ public class Optionals {
             System.out.println("Not Found");
         }
 
+//        result.ifPresent(p -> p.startsWith("H"));
+//
+//        System.out.println(result);
 //        names.stream()
 //                .filter(name -> name.startsWith("W"))
 //                .findAny()
 //                .orElseThrow(IllegalStateException::new);
+
+        // antes do optional estudar flatMap
 
     }
 }
