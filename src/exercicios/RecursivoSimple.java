@@ -5,13 +5,11 @@ import java.util.Scanner;
 public class RecursivoSimple {
 
     public static int somaAlgarismos(int num){
-
         if (num < 10) {
             return num;
         } else {
             return somaAlgarismos(num/10) + num % 10;
         }
-
     }
 
     public static void main(String[] args) {
