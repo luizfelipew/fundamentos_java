@@ -9,7 +9,6 @@ public class ExecThread {
 //                System.out.println("Executando um Runnable");
 //            }
 //        }).start();
-
         new Thread(() -> System.out.println("Executando um Runnable")).start();
     }
 }
