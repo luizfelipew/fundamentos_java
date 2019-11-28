@@ -1,4 +1,4 @@
-package threads;
+package threads.principal;
 
 import javax.swing.*;
 
