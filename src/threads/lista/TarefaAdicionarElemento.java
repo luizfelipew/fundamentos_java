@@ -1,11 +1,13 @@
 package threads.lista;
 
+import java.util.List;
+
 public class TarefaAdicionarElemento implements Runnable {
 
     private int numeroDaThread;
-    private Lista lista;
+    private List<String> lista;
 
-    public TarefaAdicionarElemento(Lista lista, int numeroDaThread) {
+    public TarefaAdicionarElemento(List<String> lista, int numeroDaThread) {
         this.lista = lista;
         this.numeroDaThread = numeroDaThread;
     }
@@ -13,8 +15,8 @@ public class TarefaAdicionarElemento implements Runnable {
     @Override
     public void run() {
 
-        for (int i = 0; i < 10; i++){
-            lista.adicionaElementos("Thread " + numeroDaThread + " - " + i);
+        for (int i = 0; i < 100; i++){
+            lista.add("Thread " + numeroDaThread + " - " + i);
         }
 
     }
