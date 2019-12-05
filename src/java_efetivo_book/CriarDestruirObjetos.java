@@ -1,9 +1,15 @@
 package java_efetivo_book;
 
+import java.time.Instant;
+import java.util.Date;
+
 public class CriarDestruirObjetos {
 
     public static void main(String[] args) {
-        StaticFactory staticFactory = new StaticFactory();
+        Date d = Date.from(Instant.now());
+        System.out.println(d);
+
+
 
     }
 
