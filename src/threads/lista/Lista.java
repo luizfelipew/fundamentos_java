@@ -30,4 +30,8 @@ public class Lista {
         return this.elementos[posicao];
     }
 
+    public boolean estaCheia() {
+        return this.indice == this.tamanho();
+    }
+
 }
