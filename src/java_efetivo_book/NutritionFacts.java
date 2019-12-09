@@ -64,4 +64,18 @@ public class NutritionFacts {
         carbohydrate = builder.carbohydrate;
     }
 
+    public static void main(String[] args) {
+        getCocaCola();
+    }
+
+    private static void getCocaCola() throws IllegalArgumentException {
+        NutritionFacts cocaCola = new Builder(240, 8)
+            .calories(100)
+            .sodium(35)
+            .carbohydrate(27)
+            .build();
+
+        System.out.println(cocaCola.carbohydrate);
+    }
+
 }
