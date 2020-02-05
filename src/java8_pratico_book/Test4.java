@@ -23,7 +23,9 @@ public class Test4 {
         usuarios.add(usuario2);
         usuarios.add(usuario3);
 
-        usuarios.removeIf(predicado);
+//        usuarios.removeIf(predicado);
+//        usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
+        usuarios.removeIf(usuario -> usuario.getPontos() > 160);
         usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
     }
 
