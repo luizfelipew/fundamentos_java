@@ -1,9 +1,8 @@
 package java8_pratico_book.comparators;
 
-import java8_pratico_book.Usuario;
+import java8_pratico_book.model.Usuario;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -27,8 +26,14 @@ public class ComparatorTest {
 //            }
 //        };
 
-        Collections.sort(usuarios, (u1, u2) -> u1.getNome().compareTo(u2.getNome()));
+//        Collections.sort(usuarios, (u1, u2) -> u1.getNome().compareTo(u2.getNome()));
 
+//        usuarios.sort((u1, u2) -> u1.getNome().compareTo(u2.getNome()));
+//        usuarios.forEach(usuario -> System.out.println(usuario.getNome()));
+
+        usuarios.sort(Comparator.comparing(u->u.getNome()));
+        usuarios.forEach(usuario -> usuario.getNome());
+        System.out.println();
 
     }
 

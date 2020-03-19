@@ -1,8 +1,9 @@
 package java8_pratico_book;
 
+import java8_pratico_book.model.Usuario;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class Test {
 

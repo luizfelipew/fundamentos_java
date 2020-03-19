@@ -1,5 +1,7 @@
 package java8_pratico_book;
 
+import java8_pratico_book.model.Usuario;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;

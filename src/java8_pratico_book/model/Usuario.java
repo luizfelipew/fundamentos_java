@@ -1,4 +1,4 @@
-package java8_pratico_book;
+package java8_pratico_book.model;
 
 public class Usuario {
 
