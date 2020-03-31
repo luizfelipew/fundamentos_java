@@ -7,7 +7,7 @@ import java.util.function.Function;
 public class FunctionModerador implements Function<Usuario, String> {
 
 
-    public String apply() {
+    public String apply(final Usuario usuario) {
         return usuario.getNome();
     }
 
