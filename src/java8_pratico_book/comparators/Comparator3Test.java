@@ -20,11 +20,15 @@ public class Comparator3Test {
         usuarios.add(usuario2);
         usuarios.add(usuario3);
 
-
         List<Usuario> usuariosSecond = new ArrayList<>();
         usuariosSecond.add(usuario1);
         usuariosSecond.add(usuario2);
         usuariosSecond.add(usuario3);
+
+        List<Usuario> usuariosThird = new ArrayList<>();
+        usuariosThird.add(usuario1);
+        usuariosThird.add(usuario2);
+        usuariosThird.add(usuario3);
 
         usuarios.sort(Comparator.comparingInt(Usuario::getPontos));
 
@@ -37,13 +41,24 @@ public class Comparator3Test {
         System.out.println("=====================");
 
         usuariosSecond.sort(Comparator.comparingInt(Usuario::getPontos)
-                                .thenComparing(Usuario::getNome));
+            .thenComparing(Usuario::getNome));
 
         List<String> collectSecond = usuariosSecond.stream()
             .map(Usuario::getNome)
             .collect(Collectors.toList());
 
         System.out.println(collectSecond.get(1));
+
+        System.out.println("=====================\n");
+        System.out.println("=====================");
+
+        usuariosThird.sort(Comparator.comparing(Usuario::getPontos).reversed());
+
+        List<String> collectThird = usuariosThird.stream()
+            .map(Usuario::getNome)
+            .collect(Collectors.toList());
+
+        System.out.println(collectThird.get(0));
     }
 
 }
