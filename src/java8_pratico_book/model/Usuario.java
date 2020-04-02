@@ -27,4 +27,7 @@ public class Usuario {
         return moderador;
     }
 
+    public String toString(){
+        return "Usuario: " + nome;
+    }
 }
