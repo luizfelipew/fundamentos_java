@@ -1,25 +1,21 @@
-package java8_pratico_book.model;
+package java8_pratico_book.method_reference;
 
-public class Usuario {
+public class UsuarioMethod {
 
     private String nome;
     private int pontos;
     private boolean moderador;
 
-    public Usuario(final String nome, final int pontos) {
+    public UsuarioMethod(final String nome) {
         this.nome = nome;
-        this.pontos = pontos;
     }
 
-    public Usuario() {
+    public UsuarioMethod() {
     }
+
 
     public String getNome() {
         return nome;
-    }
-
-    public int getPontos() {
-        return pontos;
     }
 
     public void tornaModerador(){
@@ -33,4 +29,5 @@ public class Usuario {
     public String toString(){
         return "Usuario: " + nome;
     }
+
 }
