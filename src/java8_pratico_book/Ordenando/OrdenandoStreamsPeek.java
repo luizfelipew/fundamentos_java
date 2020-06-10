@@ -5,7 +5,6 @@ import java8_pratico_book.model.UsuarioToBuild;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 public class OrdenandoStreamsPeek {
 
@@ -17,8 +16,6 @@ public class OrdenandoStreamsPeek {
             .sorted(Comparator.comparing(Usuario::getNome))
             .peek(System.out::println)
             .findAny();
-
-
     }
 
 }
