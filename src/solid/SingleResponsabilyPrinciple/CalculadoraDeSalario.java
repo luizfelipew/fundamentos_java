@@ -1,4 +1,4 @@
-package solid;
+package solid.SingleResponsabilyPrinciple;
 
 public class CalculadoraDeSalario {
 

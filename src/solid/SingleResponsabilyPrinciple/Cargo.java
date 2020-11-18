@@ -1,4 +1,4 @@
-package solid;
+package solid.SingleResponsabilyPrinciple;
 
 public enum Cargo {
     DESENVOLVEDOR(new DezOuVintePorCento()),
