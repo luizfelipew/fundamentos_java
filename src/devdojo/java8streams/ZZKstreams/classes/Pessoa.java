@@ -2,6 +2,7 @@ package devdojo.java8streams.ZZKstreams.classes;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class Pessoa {
     private String nome;
@@ -16,8 +17,9 @@ public class Pessoa {
 
     public static List<Pessoa> bancoDePessoas() {
         return Arrays.asList(
-                new Pessoa("Luiz Felipe", 35, 2000),
-                new Pessoa("Mercy", 28, 1500),
+                new Pessoa("Luiz Felipe", 22, 2000),
+                new Pessoa("Mercy", 22, 1500),
+                new Pessoa("Mercy", 22, 1500),
                 new Pessoa("Ana", 19, 1985),
                 new Pessoa("Thor", 23, 1895),
                 new Pessoa("Hulk", 35, 8000),
@@ -25,6 +27,19 @@ public class Pessoa {
                 new Pessoa("Batman", 37, 10000000),
                 new Pessoa("Lanterna verde", 24, 5000)
         );
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return Objects.equals(nome, pessoa.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome);
     }
 
     public String getNome() {
