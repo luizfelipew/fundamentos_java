@@ -24,7 +24,7 @@ public class Pessoa {
                 new Pessoa("Thor", 23, 1895),
                 new Pessoa("Hulk", 35, 8000),
                 new Pessoa("Flash", 29, 3200),
-                new Pessoa("Batman", 37, 10000000),
+                new Pessoa("Batman", 37, 10000),
                 new Pessoa("Lanterna verde", 24, 5000)
         );
     }
